@@ -30,14 +30,20 @@ form {
 }
 
 .mover {
+  backface-visibility: hidden;
   position: fixed;
-  width: 256px;
+  height: 100px;
+  width: 73.333px;
   z-index: -1;
+  transform: translateZ(0);
+  transform: translate3d(0,0,0);
 }
 
 .randomPizzaContainer {
   float: left;
   display: flex;
+  width: 33.33%;
+  height: 325px;
 }
 
 .randomPizzaContainer:after {
@@ -46,6 +52,6 @@ form {
   clear:both;
 }
 
- .container {
+.container {
   background-color: rgba(240, 60, 60, 0.8);
 }
